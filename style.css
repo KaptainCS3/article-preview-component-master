@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background:  hsl(210, 46%, 95%);
+    font-size: 13px;
+    height: 100vh;
+}
+h3{
+    padding: 28px 28px 15px 28px;
+    color: hsl(217, 19%, 35%);
+}
+p{
+    padding: 0 28px;
+    color: hsl(212, 23%, 69%);
+    font-weight: lighter;
+}
+.text{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+.date{
+    color: hsl(212, 23%, 69%);
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    padding: 0 30px;
+    flex-wrap: nowrap;
+}
+.caption{
+    padding-right: 35px;
+}
+.bottom .avartar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.share-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: hsl(210, 46%, 95%);
+    padding: 7px;
+    cursor: pointer;
+}
+.share-icon svg{
+    fill: hsl(217, 19%, 35%);
+}
+    /*     mobile responsive section     */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+.container{
+    width: 41%;
+    height: 464px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+}
+.hero{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(./images/drawers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+    background: #fff;
+    width: 100%;
+    height: 60%; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bottom{
+    height: 57px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.caption{
+    padding-right: 35px;
+}
+.bottom .avartar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.share-icon img{
+    padding: 4px;
+    display: inline-block;
+}
+.active{
+    display: none;
+}
+.share-icon:hover .active{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: -15px;
+    left: 0;
+    background: hsl(217, 19%, 35%);
+    height: 60px;
+    flex-direction: row;
+    margin-left: -245px;
+    margin-top: -60px;
+    width: 305px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.share-icon:hover{
+    position: absolute;
+    right: 30px;
+    z-index: 2;
+    visibility: visible;
+    background: hsl(214, 17%, 51%);
+}
+.share-icon:hover svg path{
+    fill: #fff;
+}
+}
+/* colors{
+    color:hsl(217, 19%, 35%);
+    color:hsl(214, 17%, 51%);
+    color:hsl(212, 23%, 69%);
+    color:hsl(210, 46%, 95%);
+
+} */
+/*      Desktop view section        */
+@media screen and (min-width: 769px) {
+    .container{
+        width: 50%;
+        height: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+    }
+    .hero{
+        width: 37%;
+        height: 100%;
+        background-image: url(./images/drawers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .content{
+        width: 55%;
+        background: #fff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .caption{
+        padding-right: 105px;
+    }
+    .share-icon{
+        position: relative;
+    }
+    .social-media{
+        padding-right: 24px;
+    }
+    span img{
+        width: 18px;
+        height: 18px;
+    }
+    .social-media span{
+        position: relative;
+        padding-right: 8px;
+    }
+    .share-icon .active::before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: hsl(217, 19%, 35%);
+        bottom: -5px;
+        left: 107px;
+        transform: rotate(45deg);
+    }
+    .active{
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        align-items: center;
+        width: 220px;
+        bottom: 55px;
+        background: hsl(217, 19%, 35%);
+        border-radius: 5px;
+        height: 45px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .share-icon:hover .active{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }  
+    .share-icon:hover svg path{
+        fill: #fff;
+    }
+    .share-icon:hover{
+     background: hsl(217, 19%, 35%);   
+    }
+}
