@@ -54,7 +54,7 @@ p{
     fill: hsl(217, 19%, 35%);
 }
     /*     mobile responsive section     */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
 .container{
     width: 41%;
     height: 464px;
