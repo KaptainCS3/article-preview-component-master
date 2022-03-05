@@ -9,7 +9,7 @@ body{
     font-size: 13px;
     height: 100vh;
 }
-h3{
+h1{
     padding: 28px 28px 15px 28px;
     color: hsl(217, 19%, 35%);
 }
@@ -159,7 +159,7 @@ p{
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    h3{
+    h1{
         font-size: 18px;
     }
     p{
