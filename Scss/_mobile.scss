@@ -1,5 +1,5 @@
 @import './variables';
-@media (min-width: 250px) and (max-width: 375px){
+@media (min-width: 250px) and (max-width: 768px){
     body{
         display: flex;
         height: 100vh;
@@ -7,7 +7,6 @@
         justify-content: center;
         align-items: center;
         font-size: $fontBody;
-        background: $grayishBlue;
         .container{
         height: 500px;
         width: 280px;
