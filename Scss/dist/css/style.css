@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   body {
     height: 100vh;
     display: flex;
@@ -59,7 +59,7 @@
     border-radius: 50%;
   }
 }
-@media (min-width: 250px) and (max-width: 375px) {
+@media (min-width: 250px) and (max-width: 768px) {
   body {
     display: flex;
     height: 100vh;
