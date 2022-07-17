@@ -1,0 +1,118 @@
+@import './variables';
+@media (min-width: 250px) and (max-width: 375px){
+    body{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: $fontBody;
+        background: $grayishBlue;
+        .container{
+        height: 500px;
+        width: 280px;
+        .hero{
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            height: 38%;
+            background: url(/images/drawers.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section{
+            height: 55%;
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+            position: relative;
+            h1{
+                padding-bottom: 10px;
+                color: $desaturatedDarkBlue;
+                font-weight: 700;
+            }
+            p{
+                padding-bottom: 30px;
+                color: $grayishBlue;
+                font-weight: 500;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 5px;
+                .details{
+                    display: flex;
+                    width: 60%;
+                    justify-content: space-between;
+                .avartar{   
+                width: 35px;
+                height: 35px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }   
+                 }
+
+                }
+                .share{
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    background: $lightGrayishBlue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                }
+             }
+             .share-content{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                height: 70px;
+                background: $veryDarkGrayishBlue;
+                color: #fff;
+                border-radius: 0 0 8px 8px;
+                display: flex;
+                opacity: 0;
+                p{
+                    margin-top: 25px;
+                    font-weight: 500;
+                    color: $grayishBlue;
+                }
+                .share-icon{
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    span{
+                        width: 25px;
+                        height: 25px;
+                        img{
+                            width: 20%;
+                            height: 20%;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+             }
+        }
+    }
+}
+.active{
+           position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                height: 70px;
+                background: $veryDarkGrayishBlue;
+                color: #fff;
+                border-radius: 0 0 8px 8px;
+                display: flex;
+                opacity: 1;
+}
+}
