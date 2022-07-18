@@ -9,31 +9,33 @@
         font-size: $fontBody;
         .container{
         height: 500px;
-        width: 280px;
+        width: 320px;
         .hero{
             border-radius: 8px 8px 0 0;
             width: 100%;
-            height: 38%;
+            height: 42%;
             background: url(/images/drawers.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
         section{
-            height: 55%;
+            height: 58%;
             width: 100%;
-            padding: 20px;
+            padding: 31px;
             background: #fff;
             border-radius: 0 0 8px 8px;
             position: relative;
             h1{
                 padding-bottom: 10px;
-                color: $desaturatedDarkBlue;
                 font-weight: 700;
+                font-size: 16px;
             }
             p{
                 padding-bottom: 30px;
+                width: 100%;
                 color: $grayishBlue;
                 font-weight: 500;
+                font-size: 13px;
             }
             .bottom{
                 display: flex;
@@ -41,20 +43,9 @@
                 align-items: center;
                 width: 100%;
                 margin-top: 5px;
-                .details{
-                    display: flex;
-                    width: 60%;
-                    justify-content: space-between;
-                .avartar{   
-                width: 35px;
-                height: 35px;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 50%;
-                    }   
-                 }
-
+                #btn{
+                    position: relative;
+                    z-index: 1;
                 }
                 .share{
                     border: none;
@@ -66,8 +57,34 @@
                     align-items: center;
                     border-radius: 50%;
                 }
+                .details{
+                    display: flex;
+                    padding: 5px 0;
+                    width: 65%;
+                    justify-content: space-between;
+                    .avartar{   
+                        width: 35px;
+                        height: 35px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }   
+                    }
+                 .avarta-description{
+                    .text{
+                        color: $veryDarkGrayishBlue;
+                        font-weight: 700;
+                        }
+                    .date{
+                        color: $desaturatedDarkBlue;
+                        font-weight: 500;
+                        }
+     }
+ }
+
              }
-             .share-content{
+              .share-content{
                 position: absolute;
                 bottom: 0;
                 width: 100%;
@@ -76,7 +93,6 @@
                 background: $veryDarkGrayishBlue;
                 color: #fff;
                 border-radius: 0 0 8px 8px;
-                display: flex;
                 opacity: 0;
                 p{
                     margin-top: 25px;
@@ -84,34 +100,37 @@
                     color: $grayishBlue;
                 }
                 .share-icon{
-                    width: 70%;
+                    width: 60%;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
-                    span{
-                        width: 25px;
-                        height: 25px;
+                    margin: 0px 30px;
+                      p{
+                            letter-spacing: 5px;
+                        }
+                    .social-media{
+                        padding: 0 10px;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-evenly;
+                    div{
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        margin: 0 8px;
+                        margin-top: -5px;
                         img{
-                            width: 20%;
-                            height: 20%;
-                            margin: 0 5px;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }
-             }
+            }
+}
+            div.share-content-active{
+                opacity: 1;
+            }
         }
     }
-}
-.active{
-           position: absolute;
-                bottom: 0;
-                width: 100%;
-                left: 0;
-                height: 70px;
-                background: $veryDarkGrayishBlue;
-                color: #fff;
-                border-radius: 0 0 8px 8px;
-                display: flex;
-                opacity: 1;
 }
 }
