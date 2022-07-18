@@ -5,7 +5,16 @@
 }
 body{
     background: $lightGrayishBlue;
+    font-family: 'Manrope', sans-serif;
 }
  .icon{
         cursor: pointer;
+    }
+    h1{
+        color: $veryDarkGrayishBlue;
+        font-weight: 700;
+    }
+    .content p{
+        color: $grayishBlue;
+        font-weight: 500;
     }
