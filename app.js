@@ -1,7 +1,10 @@
 let btn = document.getElementById("btn")
-let action = document.getElementById('share-content')
+let path = document.getElementById("path")
+let action = document.querySelector('.share-content')
 btn.addEventListener('click', () =>{
-    action.classList.toggle('share-content')
-    // action.style.opacity = 0;
-    btn.style.fill = "#fff"
+    action.classList.toggle('share-content-active')
+    btn.classList.toggle("active")
+    path.classList.toggle("svg")
+    btn.classList.toggle("active-btn")
+    action.classList.toggle("tooltip")
 })
